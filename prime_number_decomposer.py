@@ -1,17 +1,18 @@
-n = eval(input())
+while True:
+  n = eval(input())
 
-print("\n")
+  print("\n")
 
-i = 2
-factors = []
+  i = 2
+  factors = []
 
-while i * i <= n:
-  if n % i:
-    i += 1
-  else:
-    n //= i
-    factors.append(i)
-if n > 1:
-  factors.append(n)
+  while i * i <= n:
+    if n % i:
+      i += 1
+    else:
+      n //= i
+      factors.append(i)
+  if n > 1:
+    factors.append(n)
 
-print(factors)
+  print(factors)
